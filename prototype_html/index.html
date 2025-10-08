@@ -1,79 +1,92 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7X - PROFILE</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>7X - PROFILE</title>
+        <link rel="icon" type="image/icon" href="assets/7X-LOGO.png">
+    </head>
+    <body>
 
-<!-- En-tête -->
-    <header>
-        <h1>SOULAYMAN ID BAHA</h1>
-        <img src="assets/profile.jpg" alt="Photo de profil">
-    </header>
-<!-- À propos -->
-    <section>
-        <h2>À propos</h2>
-        <p>Je m'appelle <mark>SOULAYMAN ID BAHA</mark>, j'ai 19 ans et je suis passionné par le développement web.</p>
-        <P>Actuellement, j'étudie le droit tout en me perfectionnant en programmation.</P>
-        <p>J'aime apprendre de nouvelles technologies et je rêve de lancer mes propres projets dans l'entrepreneuriat.</p>
-    </section>
+    <!-- En-tête -->
+        <header>
+            <h1>SOULAYMAN ID BAHA</h1>
+            <img src="assets/7X-LOGO.png" width="200" alt="logo 7X">
+            <nav>
+                <ul>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#information">Informations personnelles</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#loisirs">Loisirs</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!-- À propos -->
+        <section id="apropos">
+            <h2>À propos</h2>
+            <p>Je m'appelle <mark>SOULAYMAN ID BAHA</mark>, j'ai 19 ans et je suis passionné par le développement web.</p>
+            <P>Actuellement, j'étudie le droit tout en me perfectionnant en programmation.</P>
+            <p>J'aime apprendre de nouvelles technologies et je rêve de lancer mes propres projets dans l'entrepreneuriat.</p>
+        </section>
 
-<!-- Informations personnelles -->
-    <section>
-        <h2>Informations personnelles</h2>
-        <ul>
-            <li>Âge : 19 ans</li>
-            <li>Address : Maroc</li>
-            <li>Email : soulaymanidbaha444@gmail.com</li>
-            <li>Téléphone : 06 07 59 97 16</li>
-        </ul>
-    </section>
+    <!-- Informations personnelles -->
+        <section id="information">
+            <h2>Informations personnelles</h2>
+            <ul>
+                <li>Âge : 19 ans</li>
+                <li>Address : Maroc</li>
+                <li>Email : <a href="mailto: soulaymanidbaha444@gmail.com">soulaymanidbaha444@gmail.com</a></li>
+                <li>Téléphone : <a href="tel: 06 07 59 97 16">06 07 59 97 16</a></li>
+            </ul>
+        </section>
 
-<!-- Compétences -->
-    <section>
-        <h2>Compétences</h2>
-        <table border="5">
-            <tr>
-                <th>Compétences</th>
-                <th>Niveau</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>Advancé</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Advancé</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Intermédiaire</td>
-            </tr>
-            <tr>
-                <td>PHP</td>
-                <td>Débutant</td>
-            </tr>
-        </table>
-    </section>
+    <!-- Compétences -->
+        <section id="competences">
+            <h2>Compétences</h2>
+            <table border="5">
+                <tr>
+                    <th>Compétences</th>
+                    <th>%</th>
+                    <th>Niveau</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td><progress value="94" max="100"></progress></td>
+                    <td>Advancé</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td><progress value="88" max="100"></progress></td>
+                    <td>Advancé</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td><progress value="34" max="100"></progress></td>
+                    <td>Intermédiaire</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td> <progress value="4" max="100"></progress></td>
+                    <td>Débutant</td>
+                </tr>
+            </table>
+        </section>
 
-<!-- Loisirs -->
-    <section>
-        <h2>Loisirs</h2>
-        <ul>
-            <li>Lecture de livres en droit et en technologie.</li>
-            <li>Voyager et decouvrir de nouvelles cultures.</li>
-            <li>Innovation et invention de choses simples</li>
-        </ul>
-    </section>
+    <!-- Loisirs -->
+        <section id="loisirs">
+            <h2>Loisirs</h2>
+            <ul>
+                <li>Lecture de livres en droit et en technologie.</li>
+                <li>Voyager et decouvrir de nouvelles cultures.</li>
+                <li>Innovation et invention de choses simples</li>
+            </ul>
+        </section>
 
-<!-- Pied de page -->
-    <footer>
-        <button popovertarget="info">Mon GitHub </button>
-        <div id="info" popover> <a href="https://github.com/soulayman-7x" target="_blank">SOULAYMAN 7X</a></div>
-        <p>&copy; 7X - PROFILE 2025</p>
-    </footer>
-    
-</body>
-</html>
+    <!-- Pied de page -->
+        <footer>
+            <a href="https://github.com/soulayman-7x" target="_blank">GitHub</a>
+            <p>&copy; 7X - PROFILE 2025</p>
+        </footer>
+        
+    </body>
+    </html>
