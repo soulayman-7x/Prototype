@@ -1,0 +1,265 @@
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+  --bg-dark: #111827;
+  --bg-gradient: linear-gradient(135deg, #1f2937, #111827);
+
+  --text-primary: #F9FAFB;
+  --text-heading: #FBBF24;
+  --text-gold-accent: #FFD700;
+
+  --card-bg: #1F2937;
+  --card-shadow: rgba(0, 0, 0, 0.5);
+
+  --btn-primary-bg: #FBBF24;
+  --btn-primary-hover: #D9A01A;
+  --btn-primary-text: #111827;
+  --btn-delete-bg: #EF4444;
+  --btn-delete-hover: #B91C1C;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-subheading: 'Lora', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #f3f4f6;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+button.primary-btn {
+  background-color: transparent;
+  color: var(--btn-primary-bg);
+  border: 1px solid var(--btn-primary-bg);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.primary-btn:hover {
+  background-color: var(--btn-primary-hover);
+  color: var(--btn-primary-text);
+}
+
+button.btn {
+  color: var(--btn-delete-bg);
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+button.btn:hover {
+  color: #B91C1C;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 8px var(--btn-primary-hover);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, #1a1a1a, #A1885E, #0a0a0a);
+  z-index: 999;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #D4AF37;
+  font-family: var(--font-subheading);
+  text-shadow: 0 0 4px var(--btn-primary-text);
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.search {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--btn-primary-text); 
+  box-shadow: 
+    inset 0 0 20px rgba(0, 0, 0, 0.9);
+  padding: 12px 40px; 
+  font-size: 18px;
+  border-radius: 25px; 
+  margin-top: 30px;
+  width: 80%;
+  max-width: 450px; 
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+.search-box i {
+  position: absolute;
+  left: 29rem;
+  top: 45px;
+  color: #0a0a0a;
+  font-size: 20px;
+}
+
+.search:focus {
+  box-shadow: 
+    inset 0 0 20px rgba(0, 0, 0, 0.9),
+    0 0 25px 6px var(--btn-primary-bg);
+}
+
+header img {
+  width: 40px;
+  filter: drop-shadow(0 0 12px var(--btn-primary-bg));
+}
+
+.book-list {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.book-list .home-img {
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/images/home-image.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  box-shadow: 0 0 12px var(--btn-primary-bg);
+}
+
+.book-list .home-img h2 {
+  font-size: 6rem;
+  font-family: var(--font-subheading);
+  text-shadow: 0 5px 5px var(--btn-primary-hover);
+}
+
+.book-list .home-img p {
+  color: var(--btn-primary-hover);
+  font-weight: 600;
+  font-size: 20px;
+  text-shadow: 0 0 1px #fff;
+}
+
+.books_container {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.books_container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--btn-primary-bg);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 0 12px var(--btn-primary-bg);
+  position: relative;
+}
+
+.books_container img {
+  cursor: grab;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 30px 2px #0d0d0d;
+}
+
+.books_container img:hover {
+  transform: translateY(-12px) rotate(10deg) scale(1.2);
+  box-shadow: 10px 10px 30px 3px #0d0d0d;
+}
+
+.books_container .card h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 8px;
+  color: var(--btn-primary-hover);
+}
+
+.books_container .card .author {
+  color: #c4c2c2;
+}
+
+.books_container .card .year {
+  color: #aaaaaa;
+}
+
+.books_container .card .price {
+  background-color: #42ff2965;
+  padding: 4px;
+  font-weight: 600;
+}
+
+.books_container .card .bottom-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.books_container .card .bottom-card .available,
+.books_container .card .bottom-card .btn {
+  margin: 20px 0 0;
+}
+
+.books_container .card .bottom-card::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  height: 1px;
+  width: 80%;
+  background-color: var(--btn-primary-bg);
+  box-shadow: 0 0 12px var(--btn-primary-bg);
+}
+
+footer {
+  background: linear-gradient(to right, #1a1a1a, #A1885E, #0a0a0a);
+
+}
+
+footer .footer-content {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #0d0d0d;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+footer .footer-content span {
+  color: var(--btn-primary-bg);
+}
