@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #4da6ff;
+  --secondary-color: #00e0ff;
+  --accent-blue: #00a3ff;
+  --text-color: #e0e0e0;
+  --section-bg: radial-gradient(circle at center, #000 40%, #0d0d0d 100%);
+  /* box Shadow */ 
+  --main-glow: 0 0 25px rgba(77, 166, 255, 0.4);
+  --hover-glow: 0 0 35px rgba(77, 166, 255, 0.6);
+  --neon-effect: 0 0 25px rgba(0, 224, 255, 0.5);
+  --image-glow: 0 0 25px rgba(77, 166, 255, 0.8);
+}

@@ -30,3 +30,9 @@
     margin-top: 15px;
     width: 100%;
 }
+
+@media (max-width: 767px) {
+    .form-box {
+        width: 85%;
+    }
+}
