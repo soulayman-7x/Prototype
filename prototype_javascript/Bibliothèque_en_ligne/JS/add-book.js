@@ -1,7 +1,6 @@
 // load library from Local Storage
 let library = JSON.parse(localStorage.getItem('library')) || [];
 
-// Handle form submit
 document.getElementById('book-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -12,7 +11,7 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
         year: Number(document.getElementById('year').value),
         price: Number(document.getElementById('price').value),
         available: document.getElementById('available').checked,
-        image: document.getElementById('image').value.trim() || '../BOOKS/Dune.png'
+        image: document.getElementById('image').value.trim() || '../BOOKS/default.png'
     };
 
     const imageInput = document.getElementById('image');
@@ -21,12 +20,11 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     if (imagePath) {
         book.image = 'BOOKS/' + imagePath;
     } else {
-        book.image = '../BOOKS/default.png';
+        book.image = 'BOOKS/default.png';
     }
 
 
-
-    // Checking for duplicate codes
+    // duplicate codes Checking 
     const existingBook = library.find(b => b.code === book.code);
 
     if (existingBook) {
